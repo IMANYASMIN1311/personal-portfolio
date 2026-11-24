@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Siti Nuriman Yasmin Binti Yusrizal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo">IMAN YASMIN</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button id="themeToggle" class="btn btn-outline btn-small">Theme</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Projects &amp; Work Samples</h1>
+      <p style="color: var(--text-muted); margin-bottom: 1.2rem;">
+        Selected work spanning electronic logic, industrial automation concepts, and interactive web applications.
+      </p>
+
+      <div class="filter-group">
+        <button class="btn btn-outline btn-small filter-btn active-filter" data-filter="all">All Projects</button>
+        <button class="btn btn-outline btn-small filter-btn" data-filter="hardware">Electronics &amp; Logic</button>
+        <button class="btn btn-outline btn-small filter-btn" data-filter="web">Web &amp; Systems</button>
+      </div>
+
+      <div class="grid-container">
+        <!-- Project 1 -->
+        <article class="card project-card" data-category="hardware">
+          <img src="images/proj1.jpg" alt="Automated Logic Control Circuit and Sensor Setup">
+          <span class="badge">Electronics &amp; Logic</span>
+          <h3>Automated Logic Control &amp; Safety Interlock</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.6rem;">
+            <strong>Problem:</strong> Equipment actuators needed reliable condition checks to prevent unsafe operation.<br>
+            <strong>Role:</strong> Circuit &amp; Logic Designer.<br>
+            <strong>Tools:</strong> Boolean logic gates, sensor inputs, circuit simulation.<br>
+            <strong>Outcome:</strong> Designed a clear condition-driven control flow that activates output stages only when safety conditions are met.
+          </p>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-outline btn-small">View Details</a>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card project-card" data-category="hardware">
+          <img src="images/proj2.jpg" alt="Environmental Sensor Signal and Monitoring Unit">
+          <span class="badge">Electronics &amp; Logic</span>
+          <h3>Sensor Signal Acquisition &amp; Threshold Monitor</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.6rem;">
+            <strong>Problem:</strong> Fluctuating environmental readings required structured threshold detection and status indicators.<br>
+            <strong>Role:</strong> System Integrator &amp; Tester.<br>
+            <strong>Tools:</strong> Electronic sensors, signal conditioning, status indicators.<br>
+            <strong>Outcome:</strong> Verified stable sensor signal responses and clear status alerts across test conditions.
+          </p>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-outline btn-small">View Details</a>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card project-card" data-category="web">
+          <img src="images/proj3.jpg" alt="Responsive Personal Portfolio Web Application">
+          <span class="badge">Web &amp; Systems</span>
+          <h3>Responsive Engineering Portfolio Web App</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.6rem;">
+            <strong>Problem:</strong> Needed an organized, responsive web presence to present automation background and projects.<br>
+            <strong>Role:</strong> Front-End Developer.<br>
+            <strong>Tools:</strong> HTML5, CSS3 Grid/Flexbox, Vanilla JavaScript, GitHub Pages.<br>
+            <strong>Outcome:</strong> Built a multi-page portfolio featuring dynamic theme switching, project filtering, and form validation logic.
+          </p>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-outline btn-small">View on GitHub</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Siti Nuriman Yasmin Binti Yusrizal. All rights reserved.</p>
+    <p style="margin-top: 0.4rem;">
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> |
+      <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a> |
+      <a href="mailto:imanyasmin1311@gmail.com">Email Me</a>
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
